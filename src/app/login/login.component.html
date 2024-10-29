@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="styles.css">
+
+<div *ngIf="!isAuthenticated" class="login-container">
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Login</h1>
+    <form (ngSubmit)="authenticateUser()">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" [(ngModel)]="userLogin" name="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" [(ngModel)]="userPassword" name="password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div *ngIf="isAuthenticated" class="user-connected">
+    <h1>Usuário Conectado: {{ userLogin }}</h1>
+</div>

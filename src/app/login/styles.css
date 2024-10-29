@@ -1,0 +1,89 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container do login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+}
+
+.login-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Formulário de login */
+form {
+    width: 80%; /* Ocupa 80% da largura disponível */
+    max-width: 400px; /* Limite máximo de largura */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botão de Login */
+button {
+    width: 100%;
+    padding: 0.7em;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Container de usuário conectado */
+.user-connected {
+    display: flex;
+    height: 100vh;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilo para o texto de Usuário Conectado */
+.user-connected h1 {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #63df1c;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
